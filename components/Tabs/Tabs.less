@@ -8,9 +8,11 @@
     padding-top: 60px;
   }
   .tabs-item {
-    display: none; 
+    width: 0px;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 1s;
 
-    width: 75%;
     .tabs-item-title {
       font-size: 24px;
       font-weight: bold;
@@ -18,7 +20,10 @@
     }
   }
   .tabs-item-selected {
-    display: block;
+    width: 70%;
+    opacity: 1;
+    overflow: hidden;
+    transition: opacity 1.3s;
   }
 
   .tabs-links {
